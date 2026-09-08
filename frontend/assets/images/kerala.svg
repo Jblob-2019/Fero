@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="keralaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46"/>
+      <stop offset="50%" style="stop-color:#047857"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#keralaGrad)"/>
+  <circle cx="650" cy="140" r="50" fill="#fef08a" opacity="0.85"/>
+  <text x="400" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="600" fill="white">Kerala</text>
+  <text x="400" y="330" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#a7f3d0">India · Backwaters &amp; Spices</text>
+  <path d="M0,450 C200,430 350,470 500,440 C650,410 750,460 800,450 L800,600 L0,600 Z" fill="#044e3a" opacity="0.8"/>
+  <path d="M0,500 C250,480 400,520 600,490 C720,470 780,510 800,500 L800,600 L0,600 Z" fill="#022c22"/>
+  <g fill="#10b981" opacity="0.6">
+    <ellipse cx="120" cy="460" rx="40" ry="80"/>
+    <ellipse cx="240" cy="480" rx="35" ry="70"/>
+    <ellipse cx="700" cy="470" rx="45" ry="90"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "ferd-platform",
+  "version": "1.0.0",
+  "description": "Ferð Discovery Platform — Unified Runner",
+  "main": "dev.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "start": "node dev.js"
+  },
+  "keywords": [
+    "travel",
+    "ferd",
+    "discovery"
+  ],
+  "author": "",
+  "license": "ISC"
+}

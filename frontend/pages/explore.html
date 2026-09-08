@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferð — Explore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a href="../index.html" class="logo">Ferð <span>the path, chosen</span></a>
+    <div class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="food-culture.html">Food &amp; Culture</a>
+      <a href="favorites.html">Saved</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../index.html#match" class="btn btn-primary">Find my match</a>
+      <button type="button" class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="explore.html">Explore Destinations</a>
+    <a href="food-culture.html">Food &amp; Culture</a>
+    <a href="favorites.html">Saved Bookmarks</a>
+    <a href="about.html">About Ferð</a>
+    <a href="../index.html#match" class="btn btn-primary mobile-match-btn">Find my match</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <svg class="hero-paths" viewBox="0 0 1280 640" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-20 500 C 200 420, 340 560, 520 460 S 820 300, 1000 380 S 1250 300, 1320 340" stroke="#AECEBE" stroke-width="1.5" fill="none"/>
+      <path d="M-20 200 C 180 260, 300 120, 500 190 S 780 320, 980 220 S 1200 120, 1320 180" stroke="#AECEBE" stroke-width="1.5" fill="none"/>
+      <path d="M-20 60 C 220 40, 260 160, 480 90 S 760 20, 960 100 S 1180 40, 1320 70" stroke="#AECEBE" stroke-width="1" fill="none"/>
+      <circle cx="520" cy="460" r="4" fill="#C86D44"/>
+      <circle cx="980" cy="220" r="4" fill="#C86D44"/>
+      <circle cx="480" cy="90" r="4" fill="#C86D44"/>
+    </svg>
+    <div class="wrap hero-inner">
+      <div>
+        <div class="hero-eyebrow">Worldwide travel guide, starting in Asia</div>
+        <h1>Every good journey starts with <em>knowing where to go.</em></h1>
+        <p class="lede">Ferð helps you find the destination that actually fits you — your budget, your pace, your appetite for street food or temple courtyards — before you fit yourself around someone else's itinerary.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>8</b><span>destinations, growing weekly</span></div>
+          <div class="hero-stat"><b>96%</b><span>average recommendation match</span></div>
+          <div class="hero-stat"><b>1,200+</b><span>local dishes catalogued</span></div>
+        </div>
+      </div>
+      <div class="search-card" id="explore">
+        <h3>Where to, first?</h3>
+        <p class="sub">Search a destination, or tell us what you're drawn to.</p>
+        <div class="search-row">
+          <label class="vh" for="dest-search">Search destinations</label>
+          <input id="dest-search" type="text" placeholder="Try “Kyoto” or “island food”">
+          <button id="search-btn" type="button">Search</button>
+        </div>
+        <div class="chip-row" role="group" aria-label="Filter by interest">
+          <button class="chip active" type="button" aria-pressed="true">Food</button>
+          <button class="chip" type="button" aria-pressed="false">Culture</button>
+          <button class="chip" type="button" aria-pressed="false">Nature</button>
+          <button class="chip" type="button" aria-pressed="false">Adventure</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="match-section" id="match">
+    <div class="wrap match-grid">
+      <div>
+        <div class="eyebrow-label">Personalized recommendations</div>
+        <h2 style="margin-top:14px;font-size:34px;line-height:42px;">Tell us how you like to travel. We'll rank the rest.</h2>
+        <p style="color:var(--ink-muted);margin-top:16px;max-width:40ch;">Five quick preferences turn eight hundred possible trips into a short, ordered list — with a match score so you know exactly why each place made the cut.</p>
+        <form class="match-form" style="margin-top:40px;" onsubmit="return false;">
+          <div>
+            <span class="field-label">Trip duration</span>
+            <div class="segmented" role="group" aria-label="Trip duration">
+              <button type="button" aria-pressed="false">Weekend</button>
+              <button type="button" class="active" aria-pressed="true">1–2 weeks</button>
+              <button type="button" aria-pressed="false">3+ weeks</button>
+            </div>
+          </div>
+          <div>
+            <span class="field-label">Travel type</span>
+            <div class="segmented" role="group" aria-label="Travel type">
+              <button type="button" aria-pressed="false">Solo</button>
+              <button type="button" class="active" aria-pressed="true">Family</button>
+              <button type="button" aria-pressed="false">Luxury</button>
+              <button type="button" aria-pressed="false">Budget</button>
+            </div>
+          </div>
+          <div>
+            <span class="field-label">Budget range</span>
+            <div class="range-track">
+              <div class="range-fill"></div>
+              <div class="range-thumb"></div>
+            </div>
+            <div class="range-labels"><span>$500</span><span>$1,800</span><span>$4,000+</span></div>
+          </div>
+          <button type="submit" class="btn btn-secondary" style="align-self:flex-start;margin-top:8px;">See my matches</button>
+        </form>
+      </div>
+      <div class="result-card">
+        <div class="top-row">
+          <div>
+            <span class="eyebrow-label" style="color:var(--ink-muted);">Your top match</span>
+            <h3>Kerala, India</h3>
+            <span class="region">Backwaters &amp; Western Ghats</span>
+          </div>
+          <span class="match-pill">96% Match</span>
+        </div>
+        <div class="result-meta">
+          <span>💰 Mid-range · $$</span>
+          <span>🗓️ Best Nov – Feb</span>
+          <span>🌿 Nature, Food</span>
+        </div>
+        <div class="result-list">
+          <div class="result-row"><div><div class="name">Bali, Indonesia</div><div class="place">Rice terraces &amp; coastal temples</div></div><span class="mini-pill">91% Match</span></div>
+          <div class="result-row"><div><div class="name">Hanoi, Vietnam</div><div class="place">Old Quarter street food</div></div><span class="mini-pill">87% Match</span></div>
+          <div class="result-row"><div><div class="name">Kyoto, Japan</div><div class="place">Temples &amp; quiet gardens</div></div><span class="mini-pill">84% Match</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="destinations">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Featured destinations</h2>
+        <p>A first set of places worth building a trip around, each with a full budget, food, and season breakdown.</p>
+        <a href="#destinations" class="btn btn-ghost">View all destinations</a>
+      </div>
+      <div class="card-grid" id="featured-destinations"></div>
+    </div>
+  </section>
+  <section class="food-section" id="food">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Eat your way through the guide</h2>
+        <p>Every destination page opens with what locals actually eat, not a list of tourist-menu translations.</p>
+        <a href="food-culture.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.25);color:var(--cream-text);">Browse food &amp; culture</a>
+      </div>
+      <div class="food-scroll">
+        <div class="food-card">
+          <div class="food-thumb"><img src="../assets/images/ramen.jpg" alt="Tsukiji-style ramen" loading="lazy"></div>
+          <span class="place-tag">Tokyo, Japan</span>
+          <h3>Tsukiji-style ramen</h3>
+          <p>Rich tonkotsu broth simmered for twelve hours, best had standing up at a counter stall before 9am.</p>
+        </div>
+        <div class="food-card">
+          <div class="food-thumb"><img src="../assets/images/bibimbap.jpg" alt="Sizzling bibimbap" loading="lazy"></div>
+          <span class="place-tag">Seoul, South Korea</span>
+          <h3>Sizzling bibimbap</h3>
+          <p>Rice, seasoned vegetables, beef, and gochujang folded together in a stone bowl still sizzling hot.</p>
+        </div>
+        <div class="food-card">
+          <div class="food-thumb"><img src="../assets/images/boat_noodles.jpg" alt="Thai boat noodles" loading="lazy"></div>
+          <span class="place-tag">Bangkok, Thailand</span>
+          <h3>Boat noodles</h3>
+          <p>A five-baht bowl at a time — order three or four rounds from canal-side vendors before you're full.</p>
+        </div>
+        <div class="food-card">
+          <div class="food-thumb"><img src="../assets/images/appam.jpg" alt="Appam with stew" loading="lazy"></div>
+          <span class="place-tag">Kerala, India</span>
+          <h3>Appam with stew</h3>
+          <p>Lace-edged fermented rice pancakes served with a rich coconut-milk vegetable stew on banana leaves.</p>
+        </div>
+        <div class="food-card">
+          <div class="food-thumb"><img src="../assets/images/hanoi.jpg" alt="Bun cha in Hanoi" loading="lazy"></div>
+          <span class="place-tag">Hanoi, Vietnam</span>
+          <h3>Bún chả &amp; street coffee</h3>
+          <p>Grilled pork patties in a sweet-sour broth, eaten on tiny sidewalk stools that spill onto the pavement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why travel with Ferð</h2>
+        <p>Three things we built the whole site around, instead of trying to be everything to everyone.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A2F" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div><h3>Matched to you, not the average traveler</h3><p>Budget, pace, and interests shape a ranked list with a match score — no generic “top 10” written for everyone at once.</p></div>
+        <div class="why-item"><div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A2F" stroke-width="1.6"><path d="M12 3c2 3 3 5.5 3 8a3 3 0 1 1-6 0c0-2.5 1-5 3-8z"/><path d="M6 21h12"/></svg></div><h3>Food and culture come first</h3><p>Every destination opens with what people eat and celebrate there, before the list of photo-worthy landmarks.</p></div>
+        <div class="why-item"><div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1E3A2F" stroke-width="1.6"><path d="M4 19l6-14 4 9 3-5 3 10H4z"/></svg></div><h3>Built for a first trip, not a tenth</h3><p>Plain-language budgets, honest season guidance, and no assumed knowledge of a place you're visiting for the first time.</p></div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="newsletter">
+        <div><h2>Get one good destination in your inbox, monthly.</h2><p>No itineraries to skim — just a single place, its food, and when to go.</p></div>
+        <form class="newsletter-form" onsubmit="return false;"><label class="vh" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="you@example.com"><button type="submit">Subscribe</button></form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="about">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="../index.html" class="logo">Ferð</a><p>Ferð means journey, voyage, or travel. We help travelers find the road that suits them, starting across Asia.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="#destinations">All destinations</a><a href="../index.html#match">Find my match</a><a href="favorites.html">Saved favorites</a></div>
+      <div class="footer-col"><h4>Guide</h4><a href="food-culture.html">Food &amp; culture</a><a href="explore.html">Travel budgets</a><a href="explore.html">Best time to visit</a></div>
+      <div class="footer-col"><h4>Ferð</h4><a href="about.html">About us</a><a href="about.html">Contact</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ferð. All rights reserved.</span><span>Made for travelers who like knowing where they're going.</span></div>
+  </div>
+</footer>
+<script src="../js/favorites.js"></script>
+<script src="../js/featured.js"></script>
+<script src="../js/recommendations.js"></script>
+<script src="../js/filters.js"></script>
+
+
+<script src="../js/main.js"></script>
+<nav class="mobile-bottom-bar" aria-label="Mobile Quick Navigation">
+  <a href="explore.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Explore</span>
+  </a>
+  <a href="../index.html#match" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    <span>Match</span>
+  </a>
+  <a href="food-culture.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+    <span>Food</span>
+  </a>
+  <a href="favorites.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    <span>Saved</span>
+  </a>
+</nav>
+</body>
+</html>

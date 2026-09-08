@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferð — Destination</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a href="../index.html" class="logo">Ferð <span>the path, chosen</span></a>
+    <div class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="food-culture.html">Food &amp; Culture</a>
+      <a href="favorites.html">Saved</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../index.html#match" class="btn btn-primary">Find my match</a>
+      <button type="button" class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="explore.html">Explore Destinations</a>
+    <a href="food-culture.html">Food &amp; Culture</a>
+    <a href="favorites.html">Saved Bookmarks</a>
+    <a href="about.html">About Ferð</a>
+    <a href="../index.html#match" class="btn btn-primary mobile-match-btn">Find my match</a>
+  </div>
+</header>
+<main class="content">
+  <div id="detail">
+      <section style="padding:48px 0 64px;">
+        <div class="wrap">Loading destination details...</div>
+      </section>
+  </div>
+</main>
+<footer id="about">
+  <div class="wrap">
+    <div class="footer-bottom"><span>© 2026 Ferð. All rights reserved.</span></div>
+  </div>
+</footer>
+<script src="../js/favorites.js"></script>
+<script src="../js/featured.js"></script>
+<script src="../js/destination-details.js"></script>
+<script src="../js/main.js"></script>
+<nav class="mobile-bottom-bar" aria-label="Mobile Quick Navigation">
+  <a href="explore.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Explore</span>
+  </a>
+  <a href="../index.html#match" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    <span>Match</span>
+  </a>
+  <a href="food-culture.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+    <span>Food</span>
+  </a>
+  <a href="favorites.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    <span>Saved</span>
+  </a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* variables.css – Forest Deep Design System Tokens */
+:root {
+  /* Colors */
+  --surface: #F9F9FF;
+  --surface-dim: #d3daef;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container-low: #f1f3ff;
+  --surface-container: #e9edff;
+  --surface-container-high: #e1e8fd;
+  --on-surface: #111827;
+  --on-surface-variant: #3F4944;
+  --outline: #6F7973;
+  --outline-variant: #e5e7eb;
+  --primary: #065F46; /* Emerald */
+  --primary-hover: #054F3B;
+  --primary-active: #004532;
+  --primary-disabled: rgba(6,95,70,.38);
+  --on-primary: #FFFFFF;
+  --primary-tint: #8BD6B6;
+  --secondary: #416656;
+  --secondary-container: #D1FAE5;
+  --on-secondary-container: #065F46;
+  --tertiary: #3A3D3E;
+  --error: #BA1A1A;
+  --error-container: #FFDAD6;
+  --on-error: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Noto Serif', Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, sans-serif;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 12px;
+  --space-base: 8px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  /* Margins */
+  --margin-mobile: 16px;
+  --margin-tablet: 32px;
+  --margin-desktop: 64px;
+}

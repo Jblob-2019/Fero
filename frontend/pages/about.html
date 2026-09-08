@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferð — About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a href="../index.html" class="logo">Ferð <span>the path, chosen</span></a>
+    <div class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="food-culture.html">Food &amp; Culture</a>
+      <a href="favorites.html">Saved</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../index.html#match" class="btn btn-primary">Find my match</a>
+      <button type="button" class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="explore.html">Explore Destinations</a>
+    <a href="food-culture.html">Food &amp; Culture</a>
+    <a href="favorites.html">Saved Bookmarks</a>
+    <a href="about.html">About Ferð</a>
+    <a href="../index.html#match" class="btn btn-primary mobile-match-btn">Find my match</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <svg class="hero-paths" viewBox="0 0 1280 640" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-20 500 C 200 420, 340 560, 520 460 S 820 300, 1000 380 S 1250 300, 1320 340" stroke="#AECEBE" stroke-width="1.5" fill="none"/>
+      <path d="M-20 200 C 180 260, 300 120, 500 190 S 780 320, 980 220 S 1200 120, 1320 180" stroke="#AECEBE" stroke-width="1.5" fill="none"/>
+      <path d="M-20 60 C 220 40, 260 160, 480 90 S 760 20, 960 100 S 1180 40, 1320 70" stroke="#AECEBE" stroke-width="1" fill="none"/>
+      <circle cx="520" cy="460" r="4" fill="#C86D44"/>
+      <circle cx="980" cy="220" r="4" fill="#C86D44"/>
+      <circle cx="480" cy="90" r="4" fill="#C86D44"/>
+    </svg>
+    <div class="wrap hero-inner">
+      <div>
+        <div class="hero-eyebrow">Worldwide travel guide, starting in Asia</div>
+        <h1>Every good journey starts with <em>knowing where to go.</em></h1>
+        <p class="lede">Ferð helps you find the destination that actually fits you — your budget, your pace, your appetite for street food or temple courtyards — before you fit yourself around someone else's itinerary.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>8</b><span>destinations, growing weekly</span></div>
+          <div class="hero-stat"><b>96%</b><span>average recommendation match</span></div>
+          <div class="hero-stat"><b>1,200+</b><span>local dishes catalogued</span></div>
+        </div>
+      </div>
+      <div class="search-card" id="explore">
+        <h3>Where to, first?</h3>
+        <p class="sub">Search a destination, or tell us what you're drawn to.</p>
+        <div class="search-row">
+          <label class="vh" for="dest-search">Search destinations</label>
+          <input id="dest-search" type="text" placeholder="Try “Kyoto” or “island food”">
+          <button id="search-btn" type="button">Search</button>
+        </div>
+        <div class="chip-row" role="group" aria-label="Filter by interest">
+          <button class="chip active" type="button">Food</button>
+          <button class="chip" type="button">Culture</button>
+          <button class="chip" type="button">Nature</button>
+          <button class="chip" type="button">Adventure</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About content – same style as original about page -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>About Ferð</h2>
+      <p>Ferð (pronounced “fair-th”, Old Norse for journey) is a calm, modern travel guide website. Our mission is to help travelers discover destinations, explore local culture, and personalize recommendations.</p>
+      <p>We start with an Asian focus and plan to expand worldwide.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="../index.html" class="logo">Ferð</a><p>Ferð means journey, voyage, or travel. We help travelers find the road that suits them, starting across Asia.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="explore.html">All destinations</a><a href="../index.html#match">Find my match</a><a href="favorites.html">Saved favorites</a></div>
+      <div class="footer-col"><h4>Guide</h4><a href="food-culture.html">Food &amp; culture</a><a href="explore.html">Travel budgets</a><a href="explore.html">Best time to visit</a></div>
+      <div class="footer-col"><h4>Ferð</h4><a href="about.html">About us</a><a href="about.html">Contact</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ferð. All rights reserved.</span><span>Made for travelers who like knowing where they're going.</span></div>
+  </div>
+</footer>
+<script src="../js/featured.js"></script>
+<script src="../js/main.js"></script>
+<nav class="mobile-bottom-bar" aria-label="Mobile Quick Navigation">
+  <a href="explore.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Explore</span>
+  </a>
+  <a href="../index.html#match" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    <span>Match</span>
+  </a>
+  <a href="food-culture.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+    <span>Food</span>
+  </a>
+  <a href="favorites.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    <span>Saved</span>
+  </a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="kyotoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8fbc8f"/>
+      <stop offset="50%" style="stop-color:#2e8b57"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#kyotoGrad)"/>
+  <path d="M100,450 Q200,350 300,450 Q400,350 500,450 Q600,350 700,450" stroke="#d1fae5" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M150,500 Q250,400 350,500 Q450,400 550,500 Q650,400 750,500" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="700" cy="100" r="50" fill="#fbbf24" opacity="0.9"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="600" fill="white" opacity="0.95">Kyoto</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Manrope, sans-serif" font-size="20" fill="#d1fae5">Japan · East Asia</text>
+  <g fill="#fbbf24" opacity="0.7">
+    <ellipse cx="200" cy="500" rx="30" ry="10"/>
+    <ellipse cx="400" cy="510" rx="25" ry="8"/>
+    <ellipse cx="600" cy="505" rx="35" ry="12"/>
+  </g>
+  <g fill="#8fbc8f">
+    <path d="M350,300 L350,450" stroke="#2e8b57" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="350" cy="290" rx="40" ry="30"/>
+    <path d="M500,350 L500,480" stroke="#2e8b57" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="500" cy="340" rx="35" ry="25"/>
+    <path d="M650,380 L650,490" stroke="#2e8b57" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="650" cy="370" rx="30" ry="20"/>
+  </g>
+</svg>

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Tokyo",
+    "country": "Japan",
+    "tagline": "Neon Horizons & Sacred Shrines",
+    "overview": "Tokyo is a vibrant destination where traditional Japanese culture meets modern city life. Visitors can explore historic temples, peaceful gardens, busy shopping districts, and world‑famous food experiences.",
+    "rating": 4.9,
+    "image": "assets/images/tokyo.jpg",
+    "images": [
+      "assets/images/tokyo.jpg",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$$$",
+    "best_travel_season": "Spring",
+    "travel_interests": ["Food", "Culture", "Adventure"],
+    "attractions": ["Shibuya Crossing", "Sensō-ji Temple", "Tokyo Skytree", "Meiji Shrine", "Imperial Palace"],
+    "local_food": ["Sushi", "Ramen", "Tempura", "Yakitori"]
+  },
+  {
+    "id": 2,
+    "name": "Kyoto",
+    "country": "Japan",
+    "tagline": "The Ancient Heart of Zen",
+    "overview": "Kyoto offers a glimpse into historic Japan with its wooden temples, peaceful zen rock gardens, and traditional geisha tea houses, making it a cultural heartland.",
+    "rating": 4.9,
+    "image": "assets/images/kyoto.jpg",
+    "images": [
+      "assets/images/kyoto.jpg",
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$$$",
+    "best_travel_season": "Autumn",
+    "travel_interests": ["Culture", "Food"],
+    "attractions": ["Fushimi Inari Shrine", "Kinkaku-ji (Golden Pavilion)", "Gion District", "Arashiyama Bamboo Grove", "Nijō Castle"],
+    "local_food": ["Kaiseki", "Matcha sweets", "Yudofu", "Obanzai"]
+  },
+  {
+    "id": 3,
+    "name": "Bali",
+    "country": "Indonesia",
+    "tagline": "Island of Gods & Emerald Terraces",
+    "overview": "Bali is known for its lush tiered rice terraces, sacred sea temples, vibrant arts scene, and surf‑friendly beaches, offering a relaxed yet adventurous tropical vibe.",
+    "rating": 4.8,
+    "image": "assets/images/bali.jpg",
+    "images": [
+      "assets/images/bali.jpg",
+      "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$$",
+    "best_travel_season": "Summer",
+    "travel_interests": ["Food", "Nature", "Adventure"],
+    "attractions": ["Uluwatu Temple", "Ubud Monkey Forest", "Tegallalang Rice Terraces", "Mount Batur", "Seminyak Beach"],
+    "local_food": ["Nasi Goreng", "Satay Lilit", "Babi Guling", "Mie Goreng"]
+  },
+  {
+    "id": 4,
+    "name": "Kerala",
+    "country": "India",
+    "tagline": "God's Own Country & Spice Waters",
+    "overview": "Kerala’s tranquil backwaters, tea plantations in the Western Ghats, and Ayurvedic wellness retreats make it an idyllic destination for natural relaxation and deep cultural warmth.",
+    "rating": 4.9,
+    "image": "assets/images/kerala.jpg",
+    "images": [
+      "assets/images/kerala.jpg",
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$$",
+    "best_travel_season": "Winter",
+    "travel_interests": ["Food", "Culture", "Nature"],
+    "attractions": ["Alleppey Houseboats", "Munnar Tea Gardens", "Athirappilly Waterfalls", "Fort Kochi", "Wayanad Wildlife Sanctuary"],
+    "local_food": ["Sadhya", "Appam with Stew", "Karimeen Pollichathu", "Puttu & Kadala"]
+  },
+  {
+    "id": 5,
+    "name": "Bangkok",
+    "country": "Thailand",
+    "tagline": "Golden Spires & Electric Night Markets",
+    "overview": "Bangkok blends bustling street night markets, ornate riverside temples, and a lively culinary scene, offering an energetic city experience like nowhere else.",
+    "rating": 4.8,
+    "image": "assets/images/bangkok.jpg",
+    "images": [
+      "assets/images/bangkok.jpg",
+      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$",
+    "best_travel_season": "Winter",
+    "travel_interests": ["Food", "Culture", "Adventure"],
+    "attractions": ["Grand Palace", "Wat Arun", "Chatuchak Weekend Market", "Khao San Road", "Damnoen Saduak Floating Market"],
+    "local_food": ["Pad Thai", "Tom Yum Goong", "Boat Noodles", "Mango Sticky Rice"]
+  },
+  {
+    "id": 6,
+    "name": "Seoul",
+    "country": "South Korea",
+    "tagline": "Futuristic Pulse & Joseon Royalty",
+    "overview": "Seoul fuses cutting‑edge design and technology with historic royal palaces, making it a dynamic metropolis for food lovers, fashion pioneers, and culture seekers.",
+    "rating": 4.9,
+    "image": "assets/images/seoul.jpg",
+    "images": [
+      "assets/images/seoul.jpg",
+      "https://images.unsplash.com/photo-1522295170010-05899a1f574f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$$$",
+    "best_travel_season": "Spring",
+    "travel_interests": ["Food", "Culture"],
+    "attractions": ["Gyeongbokgung Palace", "Myeongdong Shopping Street", "N Seoul Tower", "Bukchon Hanok Village", "Hongdae Youth District"],
+    "local_food": ["Dolsot Bibimbap", "Korean BBQ", "Kimchi Jjigae", "Tteokbokki"]
+  },
+  {
+    "id": 7,
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "tagline": "Colonial Charm & Steaming Broths",
+    "overview": "Hanoi’s lake‑filled Old Quarter, French colonial architecture, tree-lined boulevards, and legendary street food scene offer an enchanting cultural immersion.",
+    "rating": 4.8,
+    "image": "assets/images/hanoi.jpg",
+    "images": [
+      "assets/images/hanoi.jpg",
+      "https://images.unsplash.com/photo-1548621475-8f36ae09c255?auto=format&fit=crop&w=800&q=80"
+    ],
+    "budget_category": "$",
+    "best_travel_season": "Autumn",
+    "travel_interests": ["Food", "Culture"],
+    "attractions": ["Hoan Kiem Lake", "Old Quarter 36 Streets", "Temple of Literature", "Ho Chi Minh Mausoleum", "Thang Long Water Puppet Theater"],
+    "local_food": ["Phở Bò", "Bún Chả", "Egg Coffee", "Bánh Mì"]
+  }
+]

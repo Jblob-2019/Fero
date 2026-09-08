@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="hanoiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c"/>
+      <stop offset="50%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#hanoiGrad)"/>
+  <circle cx="650" cy="120" r="50" fill="#fbbf24"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="600" fill="white">Hanoi</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Manrope, sans-serif" font-size="20" fill="#fecaca">Vietnam · Southeast Asia</text>
+  <g fill="#7f1d1d" opacity="0.8">
+    <rect x="120" y="400" width="80" height="180" rx="4"/>
+    <rect x="240" y="360" width="70" height="220" rx="4"/>
+    <rect x="350" y="320" width="100" height="260" rx="4"/>
+    <rect x="500" y="380" width="90" height="200" rx="4"/>
+    <rect x="630" y="420" width="60" height="160" rx="4"/>
+  </g>
+  <g fill="#fbbf24" opacity="0.6">
+    <circle cx="160" cy="390" r="4"/>
+    <circle cx="275" cy="350" r="4"/>
+    <circle cx="400" cy="310" r="4"/>
+    <circle cx="545" cy="370" r="4"/>
+    <circle cx="660" cy="410" r="4"/>
+  </g>
+  <ellipse cx="400" cy="580" rx="300" ry="40" fill="#fef3c7" opacity="0.3"/>
+</svg>

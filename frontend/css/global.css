@@ -1,0 +1,15 @@
+/* global.css – basic reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: var(--font-body, Arial, Helvetica, sans-serif);
+  line-height: 1.5;
+  background: var(--bg-color, #fff);
+  color: var(--text-color, #000);
+}

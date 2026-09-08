@@ -1,0 +1,22 @@
+/* responsive.css */
+@media (min-width: 768px) {
+  /* Tablet */
+  nav ul {
+    display: flex;
+    gap: var(--spacing-unit);
+  }
+  .nav-hamburger {
+    display: none;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-unit);
+  }
+}
+@media (min-width: 1024px) {
+  /* Desktop */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

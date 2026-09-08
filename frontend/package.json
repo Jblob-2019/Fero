@@ -1,0 +1,18 @@
+{
+  "name": "ferd-frontend",
+  "version": "1.0.0",
+  "description": "Frontend static client and proxy server for Ferð",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "travel",
+    "frontend",
+    "ferd",
+    "ferð"
+  ],
+  "author": "",
+  "license": "ISC"
+}

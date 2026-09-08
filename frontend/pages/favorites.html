@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferð — Saved</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a href="../index.html" class="logo">Ferð <span>the path, chosen</span></a>
+    <div class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="food-culture.html">Food &amp; Culture</a>
+      <a href="favorites.html">Saved</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../index.html#match" class="btn btn-primary">Find my match</a>
+      <button type="button" class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="explore.html">Explore Destinations</a>
+    <a href="food-culture.html">Food &amp; Culture</a>
+    <a href="favorites.html">Saved Bookmarks</a>
+    <a href="about.html">About Ferð</a>
+    <a href="../index.html#match" class="btn btn-primary mobile-match-btn">Find my match</a>
+  </div>
+</header>
+<main>
+  <section style="padding:40px 0 64px; min-height:60vh;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Your Saved Destinations</h2>
+        <p>Places you've bookmarked to explore later.</p>
+      </div>
+      <div class="card-grid" id="favorites-grid"></div>
+    </div>
+  </section>
+</main>
+<footer id="about">
+  <div class="wrap">
+    <div class="footer-bottom"><span>© 2026 Ferð. All rights reserved.</span></div>
+  </div>
+</footer>
+<script src="../js/favorites.js"></script>
+<script src="../js/featured.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('favorites-grid');
+
+    const showEmptyState = () => {
+      grid.innerHTML = `
+        <div style="grid-column:1/-1;text-align:center;padding:56px 20px;">
+          <span style="font-size:44px;display:block;margin-bottom:14px;">🔖</span>
+          <h3 style="font-size:24px;margin-bottom:8px;">No Saved Destinations Yet</h3>
+          <p style="color:var(--ink-muted);font-size:15px;margin-bottom:24px;max-width:36ch;margin-left:auto;margin-right:auto;">Tap the bookmark icon on any destination card to save places for your next trip.</p>
+          <a href="explore.html" class="btn btn-primary" style="display:inline-flex;">Browse Destinations</a>
+        </div>`;
+    };
+
+    const renderFavs = () => {
+      if (!window.allDestinations) {
+        setTimeout(renderFavs, 80);
+        return;
+      }
+      const favs = loadFavorites();
+      const favDestinations = window.allDestinations.filter(d => favs.includes(String(d.id)));
+      if (favDestinations.length === 0) {
+        showEmptyState();
+      } else {
+        if (typeof window.createFeaturedCard === 'function') {
+          grid.innerHTML = favDestinations.map(window.createFeaturedCard).join('');
+          if (window.attachFavoriteHandlers) window.attachFavoriteHandlers(grid);
+          if (window.attachCardClickHandlers) window.attachCardClickHandlers(grid);
+        }
+      }
+    };
+
+    // Animate removal if user un-saves a card directly on this page
+    if (grid) {
+      grid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.bookmark-btn');
+        if (btn) {
+          setTimeout(() => {
+            if (!btn.classList.contains('on')) {
+              const card = btn.closest('.dest-card');
+              if (card) {
+                card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                  card.remove();
+                  if (grid.querySelectorAll('.dest-card').length === 0) {
+                    showEmptyState();
+                  }
+                }, 250);
+              }
+            }
+          }, 50);
+        }
+      });
+    }
+
+    renderFavs();
+  });
+</script>
+<nav class="mobile-bottom-bar" aria-label="Mobile Quick Navigation">
+  <a href="explore.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Explore</span>
+  </a>
+  <a href="../index.html#match" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    <span>Match</span>
+  </a>
+  <a href="food-culture.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+    <span>Food</span>
+  </a>
+  <a href="favorites.html" class="nav-item active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    <span>Saved</span>
+  </a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferð — Food &amp; Culture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .food-hero {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+  }
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+  }
+  .food-item-card {
+    background: var(--surface-card);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .food-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(30,58,47,0.08);
+  }
+  .food-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 12px;
+  }
+  .food-item-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .food-item-card p {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .food-dishes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+  }
+  .food-tag {
+    background: var(--surface-warm);
+    color: var(--primary);
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+  .etiquette-box {
+    background: var(--primary);
+    color: var(--cream-text);
+    border-radius: 20px;
+    padding: 48px;
+    margin-top: 64px;
+  }
+  .etiquette-box h2 {
+    color: var(--cream-text);
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .etiquette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .etiquette-item h4 {
+    color: #E29D7A;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .etiquette-item p {
+    color: #C2D9CD;
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  @media (max-width: 639px) {
+    .food-hero { padding-top: 36px; padding-bottom: 28px; }
+    .food-grid { grid-template-columns: 1fr; gap: 20px; }
+    .food-item-card { padding: 22px 18px; }
+    .etiquette-box { padding: 28px 20px; border-radius: 16px; margin-top: 40px; }
+    .etiquette-box h2 { font-size: 26px; }
+    .etiquette-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Primary">
+    <a href="../index.html" class="logo">Ferð <span>the path, chosen</span></a>
+    <div class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="food-culture.html">Food &amp; Culture</a>
+      <a href="favorites.html">Saved</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="../index.html#match" class="btn btn-primary">Find my match</a>
+      <button type="button" class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="explore.html">Explore Destinations</a>
+    <a href="food-culture.html">Food &amp; Culture</a>
+    <a href="favorites.html">Saved Bookmarks</a>
+    <a href="about.html">About Ferð</a>
+    <a href="../index.html#match" class="btn btn-primary mobile-match-btn">Find my match</a>
+  </div>
+</header>
+
+<main>
+  <section class="food-hero">
+    <div class="wrap">
+      <div class="eyebrow-label">Culinary Journeys &amp; Traditions</div>
+      <h1 style="font-size:clamp(28px, 6.5vw, 44px);line-height:1.2;margin-top:12px;margin-bottom:16px;">Eat your way through Asia, plate by plate.</h1>
+      <p style="color:var(--ink-muted);font-size:16.5px;max-width:55ch;line-height:1.6;">Every destination in Ferð begins at the dining table. Here is what makes the food and cultural rhythm of each place unforgettable.</p>
+    </div>
+  </section>
+
+  <section style="padding:64px 0;">
+    <div class="wrap">
+      <div class="food-grid">
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/ramen.jpg" alt="Japanese Ramen" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🍜 Japan · Tokyo &amp; Kyoto</span>
+          <h3>The Art of Shokunin &amp; Kaiseki</h3>
+          <p>From 4am Tsukiji tuna auctions and lightning-fast standing ramen counters to Kyoto's multi-course seasonal Kaiseki banquets, eating in Japan is a spiritual devotion to craft and seasonal terroir.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Tonkotsu Ramen</span>
+            <span class="food-tag">Edomae Sushi</span>
+            <span class="food-tag">Kaiseki</span>
+            <span class="food-tag">Matcha Sweets</span>
+          </div>
+        </div>
+
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/boat_noodles.jpg" alt="Thai Boat Noodles" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🍛 Thailand · Bangkok</span>
+          <h3>Canal-Side Spice &amp; Street Stalls</h3>
+          <p>Bangkok's culinary soul is found under the glow of neon market signs. Fiery tom yum soups, rich boat noodles simmered in dark aromatic spices, and coconut sticky rice with golden honey mangoes.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Boat Noodles</span>
+            <span class="food-tag">Tom Yum Goong</span>
+            <span class="food-tag">Pad Thai</span>
+            <span class="food-tag">Mango Sticky Rice</span>
+          </div>
+        </div>
+
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/appam.jpg" alt="Kerala Appam & Stew" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🥥 India · Kerala</span>
+          <h3>Spices, Coconut &amp; Sadhya Feasts</h3>
+          <p>The ancient spice coast serves fragrant feasts on banana leaves. Lace-edged rice appams dipped in rich coconut stew, fiery fish curries wrapped in banana leaves, and fragrant pepper plantations.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Appam &amp; Stew</span>
+            <span class="food-tag">Karimeen Pollichathu</span>
+            <span class="food-tag">Onam Sadhya</span>
+            <span class="food-tag">Kerala Parotta</span>
+          </div>
+        </div>
+
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/bibimbap.jpg" alt="Korean Bibimbap" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🥘 South Korea · Seoul</span>
+          <h3>Shared Bowls &amp; Pocha Night Markets</h3>
+          <p>Korean food is communal by nature. Sizzling stone-pot bibimbap, tables packed with fermenting banchan kimchi, and tented pocha stalls serving crisp pajeon pancakes and hot tteokbokki.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Dolsot Bibimbap</span>
+            <span class="food-tag">Korean BBQ</span>
+            <span class="food-tag">Kimchi Jjigae</span>
+            <span class="food-tag">Tteokbokki</span>
+          </div>
+        </div>
+
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/hanoi.jpg" alt="Hanoi Street Food" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🍢 Vietnam · Hanoi</span>
+          <h3>Plastic Stools &amp; Simmering Broths</h3>
+          <p>Hanoi mornings are defined by steamy pho aromas wafting down narrow French-colonial alleys, char-grilled pork patties sizzling over open coals for bun cha, and frothy egg coffee.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Pho Bo</span>
+            <span class="food-tag">Bun Cha</span>
+            <span class="food-tag">Egg Coffee</span>
+            <span class="food-tag">Banh Mi</span>
+          </div>
+        </div>
+
+        <div class="food-item-card">
+          <div style="height:190px;border-radius:12px;overflow:hidden;margin-bottom:18px;">
+            <img src="../assets/images/bali.jpg" alt="Bali Rice & Herbs" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="food-badge">🌴 Indonesia · Bali</span>
+          <h3>Island Herbs, Sambal &amp; Warung Feasts</h3>
+          <p>Balinese cuisine balances roasted spices (bumbu bali), crispy suckling pig (babi guling), fresh ocean catch grilled over coconut husks on Jimbaran beach, and fiery raw sambal matah.</p>
+          <div class="food-dishes">
+            <span class="food-tag">Nasi Goreng</span>
+            <span class="food-tag">Babi Guling</span>
+            <span class="food-tag">Satay Lilit</span>
+            <span class="food-tag">Sambal Matah</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etiquette-box">
+        <div class="eyebrow-label" style="color:#C2D9CD;">Local Customs &amp; Table Etiquette</div>
+        <h2>Respecting the table across cultures</h2>
+        <p style="color:#C2D9CD;max-width:60ch;font-size:16px;">Eating locally is one of the highest forms of cultural appreciation. Here are a few etiquette tips to remember when traveling.</p>
+        
+        <div class="etiquette-grid">
+          <div class="etiquette-item">
+            <h4>🥢 Chopstick Etiquette (Japan &amp; Vietnam)</h4>
+            <p>Never stick chopsticks vertically into a bowl of rice (resembles funeral incense). Rest them horizontally on the ceramic holder provided.</p>
+          </div>
+          <div class="etiquette-item">
+            <h4>✋ Right Hand Tradition (India &amp; Bali)</h4>
+            <p>In traditional banana-leaf dining, eat using the fingers of your right hand only. It is considered polite and connects you directly with the food texture.</p>
+          </div>
+          <div class="etiquette-item">
+            <h4>🍶 Two-Handed Pouring (South Korea)</h4>
+            <p>When pouring or receiving a drink or dish from someone older or senior, hold your glass or cup with both hands as a sign of deep respect.</p>
+          </div>
+          <div class="etiquette-item">
+            <h4>🪙 Tipping Philosophy (Asia)</h4>
+            <p>In Japan, tipping is not practiced and can even cause confusion. In Thailand and Vietnam, rounding up small change or leaving 5-10% at casual sit-downs is warmly appreciated.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="about">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="../index.html" class="logo">Ferð</a><p>Ferð means journey, voyage, or travel. We help travelers find the road that suits them, starting across Asia.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="explore.html">All destinations</a><a href="../index.html#match">Find my match</a><a href="favorites.html">Saved favorites</a></div>
+      <div class="footer-col"><h4>Guide</h4><a href="food-culture.html">Food &amp; culture</a><a href="explore.html">Travel budgets</a><a href="explore.html">Best time to visit</a></div>
+      <div class="footer-col"><h4>Ferð</h4><a href="about.html">About us</a><a href="about.html">Contact</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ferð. All rights reserved.</span><span>Made for travelers who like knowing where they're going.</span></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<nav class="mobile-bottom-bar" aria-label="Mobile Quick Navigation">
+  <a href="explore.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Explore</span>
+  </a>
+  <a href="../index.html#match" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    <span>Match</span>
+  </a>
+  <a href="food-culture.html" class="nav-item active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+    <span>Food</span>
+  </a>
+  <a href="favorites.html" class="nav-item">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    <span>Saved</span>
+  </a>
+</nav>
+</body>
+</html>

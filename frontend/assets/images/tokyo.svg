@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="tokyoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="50%" style="stop-color:#0f1f3a"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#tokyoGrad)"/>
+  <circle cx="650" cy="120" r="60" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="650" cy="120" r="55" fill="#fef3c7" opacity="0.3"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="600" fill="white" opacity="0.9">Tokyo</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Manrope, sans-serif" font-size="20" fill="#d1fae5">Japan · East Asia</text>
+  <g fill="white" opacity="0.15">
+    <rect x="100" y="400" width="80" height="180" rx="4"/>
+    <rect x="220" y="350" width="60" height="230" rx="4"/>
+    <rect x="320" y="420" width="70" height="160" rx="4"/>
+    <rect x="430" y="380" width="90" height="200" rx="4"/>
+    <rect x="560" y="440" width="50" height="140" rx="4"/>
+    <rect x="650" y="360" width="75" height="220" rx="4"/>
+  </g>
+  <g fill="#fbbf24" opacity="0.6">
+    <circle cx="140" cy="390" r="3"/>
+    <circle cx="140" cy="430" r="3"/>
+    <circle cx="250" cy="340" r="3"/>
+    <circle cx="250" cy="380" r="3"/>
+    <circle cx="355" cy="410" r="3"/>
+    <circle cx="475" cy="370" r="3"/>
+    <circle cx="585" cy="430" r="3"/>
+    <circle cx="687" cy="350" r="3"/>
+  </g>
+</svg>

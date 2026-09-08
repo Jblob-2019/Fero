@@ -1,0 +1,12 @@
+/* components.css */
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
