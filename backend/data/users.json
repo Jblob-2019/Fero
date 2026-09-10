@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Ferð Admin",
+    "email": "admin@ferd.com",
+    "passwordHash": "$2b$10$FaKNIiY0CJfeUMM7W3RLweVnndqsxOyQCGX.YY1M6won27/AlhxLa",
+    "role": "admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Jane Traveler",
+    "email": "traveler@ferd.com",
+    "passwordHash": "$2b$10$7W31Y6gbHBWAJ2Ol6ENSw.T1QfLPh/w0.SzePCp7Dj4J35HguZW4u",
+    "role": "user",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  }
+]
